@@ -21,7 +21,7 @@ app.set("view engine", "handlebars");
 var routes = require("./controllers/burgers_controller.js");
 
 var mysql = require("mysql");
-
+app.use("/", routes);
 var PORT = process.env.PORT || 7000;
 
 
